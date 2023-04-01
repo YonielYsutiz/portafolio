@@ -26,7 +26,7 @@ function CenterTex(){
               de trabajo dinámico y colaborativo. 
             </b>
           </Typography> 
-          <Button variant="contained" disableElevationd>
+          <Button variant="contained" href='https://drive.google.com/file/d/1OIYcSLDKMXXVIdppxW17qDy1BZPAXRu4/view?usp=share_link' disableElevationd>
             Descargar CV
           </Button>
         </Grid>

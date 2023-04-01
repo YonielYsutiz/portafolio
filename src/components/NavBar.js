@@ -31,14 +31,9 @@ function NavBar(){
         variant="permanent"
         anchor="left"
       >
-        <Avatar
-          alt="Yoniel Ysturiz"
-          src="logo512.png"
-          sx={{ width: 100, height: 100 }}
-        />
-        
+
         <List>
-          {['Inicio','Experiencia', 'Educacion', 'Sobre mi','Contactame',].map((text, index) => (
+          {['Inicio','Experiencia', 'Educacion', 'Contactame',].map((text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon>
