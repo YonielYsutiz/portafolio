@@ -28,11 +28,18 @@ export default function BasicCard() {
                             Codigo Facilito
                         </Typography>
                             <Typography variant="body2">
-                                . contenido
+                                . Variables y tipos.<br />
+                                . Operadores.<br />
+                                . Condiciones y ciclos.<br />
+                                . Arreglos.<br />
+                                . Funciones.<br />
+                                . Programacion Orientada a objetos.<br />
+                                . Base de datos.<br />
+                                . MVC.
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button size="small">Link del curso</Button>
+                        <Button size="small" href="https://codigofacilito.com/cursos/php-profesional" target="_black">Link del curso</Button>
                     </CardActions>
                 </Card>
             </Container>
@@ -51,11 +58,19 @@ export default function BasicCard() {
                             Codigo Facilito
                         </Typography>
                             <Typography variant="body2">
-                                . contenido
+                            . Asserts. <br />
+                                . Creacion de helpers. <br />
+                                . Setup and teardown. <br /> 
+                                . Base de datos. <br />
+                                . Pruebas con excepciones. <br />
+                                . Salta tests. <br />
+                                . SetupBeforeClass. <br />
+                                . After y Before. <br />
+                                . Generar reportes. <br /> 
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button size="small">Link del curso</Button>
+                        <Button size="small" href="https://codigofacilito.com/cursos/php-testing" target="_black">Link del curso</Button>
                     </CardActions>
                 </Card>
             </Container>
@@ -71,14 +86,21 @@ export default function BasicCard() {
                             Creacion de Apis en Laravel
                         </Typography>
                         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                            Codigo Facilito
+                            Platzi
                         </Typography>
                             <Typography variant="body2">
-                                . contenido
+                                . Modelo y controlador. <br /> 
+                                . Revetir migraciones y Guardar registros. <br />
+                                . Traducir validaciones. <br/> 
+                                . Mostrar, crear y eliminar registros. <br /> 
+                                . Api resources. <br/>
+                                . Laravel Sanctum. <br /> 
+                                . Test api. <br /> 
+                                . Tablas relacionadas . <br/>
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button size="small">Link del curso</Button>
+                        <Button size="small" href="https://platzi.com/cursos/laravel-api/" target="_black">Link del curso</Button>
                     </CardActions>
                 </Card>
             </Container>
@@ -95,14 +117,17 @@ export default function BasicCard() {
                             Fundamentos de Python
                         </Typography>
                         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                            Codigo Facilito
+                            Crehana
                         </Typography>
                             <Typography variant="body2">
-                                . contenido
+                                . Conceptos basicos. <br/>
+                                . Estructuras de control. <br/>
+                                . Estructuras de datos. <br />
+                                . Funciones. <br/>
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button size="small">Link del curso</Button>
+                        <Button size="small"  href="https://www.crehana.com/cursos-online-diseno-web/fundamentos-de-python/?source_page=Search%20Landing&source_detail=Search%20Landing&source=search&model_used=SEARCH_ENGINE_V2.2&product_name=Fundamentos%20de%20Python&product_id=12080&keyword=fundamentos%20de%20python&item_type=course&position_selected=0" target="_black">Link del curso</Button>
                     </CardActions>
                 </Card>
             </Container>
@@ -111,7 +136,7 @@ export default function BasicCard() {
             
     </React.Fragment>  
 
-  );
+    );
 }
 
 // function EducationText() {
