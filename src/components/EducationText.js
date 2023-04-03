@@ -1,4 +1,4 @@
-import { Grid } from '@mui/material';
+import { Grid, ListItem } from '@mui/material';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -8,15 +8,74 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
 
-export default function BasicCard() {
+// const Content_first = ()=>{
+//   return 
+//   <p>
+//     . Variables y tipos.<br />
+//     . Operadores.<br />
+//     . Condiciones y ciclos.<br />
+//     . Arreglos.<br />
+//     . Funciones.<br />
+//     . Programacion Orientada a objetos.<br />
+//     . Base de datos.<br />
+//     . MVC.
+//   </p>
+// }
+
+// const Content_second = ()=>{
+//   return 
+//   <p>
+//     . Asserts. <br />
+//     . Creacion de helpers. <br />
+//     . Setup and teardown. <br />
+//     . Base de datos. <br />
+//     . Pruebas con excepciones. <br />
+//     . Salta tests. <br />
+//     . SetupBeforeClass. <br />
+//     . After y Before. <br />
+//     . Generar reportes. <br />
+//   </p>
+// }
+
+// const Content_third = ()=>{
+//   return 
+//   <p>
+//     . Modelo y controlador. <br />
+//     . Revetir migraciones y Guardar registros. <br />
+//     . Traducir validaciones. <br />
+//     . Mostrar, crear y eliminar registros. <br />
+//     . Api resources. <br />
+//     . Laravel Sanctum. <br />
+//     . Test api. <br />
+//     . Tablas relacionadas . <br />
+//   </p>
+// }
+
+// const Content_fourth = ()=>{
+//   <p>
+//     . Conceptos basicos. <br />
+//     . Estructuras de control. <br />
+//     . Estructuras de datos. <br />
+//     . Funciones. <br />
+//   </p>
+// }
+// const skills = [
+//     {year: 2023, title: 'Curso profesional de PHP', platform: 'codigo facilito', content: [<Content_first />], link: "https://codigofacilito.com/cursos/php-profesional"},
+//     {year: 2023, title: 'Pruebas Unitarias con PHP',platform: 'Codigo facilito', content: [<Content_second />], link:"https://codigofacilito.com/cursos/php-testing"},
+//     {year: 2022, title: 'Creacion de apis en laravel',platform: 'Platzi', content: [<Content_third />], link:"https://platzi.com/cursos/laravel-api/"},
+//     {year: 2022, title: 'Fundamentos de Python',platform: 'Crehana', content: [<Content_fourth />], link:"https://www.crehana.com/cursos-online-diseno-web/fundamentos-de-python/?source_page=Search%20Landing&source_detail=Search%20Landing&source=search&model_used=SEARCH_ENGINE_V2.2&product_name=Fundamentos%20de%20Python&product_id=12080&keyword=fundamentos%20de%20python&item_type=course&position_selected=0"},
+
+// ]
+
+export default function EducationTex() {
   return (
     <>
       <Typography
         variant="h3"
         align="auto"
       >
-        {' '}
-        Mis estudios{' '}
+        
+        Mis estudios
       </Typography>
 
       <Grid
@@ -53,20 +112,14 @@ export default function BasicCard() {
                   Codigo Facilito
                 </Typography>
                 <Typography variant="body2">
-                  . Variables y tipos.
-                  <br />
-                  . Operadores.
-                  <br />
-                  . Condiciones y ciclos.
-                  <br />
-                  . Arreglos.
-                  <br />
-                  . Funciones.
-                  <br />
-                  . Programacion Orientada a objetos.
-                  <br />
-                  . Base de datos.
-                  <br />. MVC.
+                  . Variables y tipos.<br />
+                  . Operadores.<br />
+                  . Condiciones y ciclos.<br />
+                  . Arreglos.<br />
+                  . Funciones.<br />
+                  . Programacion Orientada a objetos.<br />
+                  . Base de datos.<br />
+                  . MVC.
                 </Typography>
               </CardContent>
               <CardActions>
@@ -86,7 +139,7 @@ export default function BasicCard() {
           item
         >
           <Container maxWidth="md">
-            <Card sx={{ minWidth: 100 }}>
+            <Card sx={{ minWidth: 100, borderRadius: '14px', padding: '10px'}}>
               <CardContent>
                 <Typography
                   sx={{ fontSize: 14 }}
@@ -136,7 +189,7 @@ export default function BasicCard() {
           item
         >
           <Container maxWidth="md">
-            <Card sx={{ minWidth: 100 }}>
+            <Card sx={{ minWidth: 100, borderRadius: '14px', padding: '10px' }}>
               <CardContent>
                 <Typography
                   sx={{ fontSize: 14 }}
@@ -177,7 +230,7 @@ export default function BasicCard() {
                   Link del curso
                 </Button>
               </CardActions>
-            </Card>
+                </Card>
           </Container>
         </Grid>
 
@@ -187,7 +240,7 @@ export default function BasicCard() {
           mb={5}
         >
           <Container maxWidth="md">
-            <Card sx={{ minWidth: 100 }}>
+            <Card sx={{ minWidth: 100, borderRadius: '14px', padding: '10px'}}>
               <CardContent>
                 <Typography
                   sx={{ fontSize: 14 }}
@@ -231,65 +284,3 @@ export default function BasicCard() {
     </>
   );
 }
-
-// function EducationText() {
-//   return (
-// <React.Fragment>
-//     <CssBaseline />
-//     <Container maxWidth="sm">
-//     <Box sx={{ alignItems: 'column', bgcolor: '#000000', height: '100vh' }}>
-//             <Typography variant="h5" align="auto">
-//                 <b>Bachiller (2017-2021)</b>
-//             </Typography>
-//             <Typography variant="body1" align = "auto">
-//                 <b>Unidad Educativa Carmen Ruiz</b>
-//             </Typography>
-//             <Divider />
-//             <Typography variant="h5" align = "auto">
-//                 <b>Curso Basico de programacion (2022)</b>
-//             </Typography>
-//             <Typography variant="body1" align = "auto">
-//                 <b>Platzi(2022)</b>
-//             </Typography>
-//             <Divider />
-//             <Typography variant="h5" align = "auto">
-//                 <b>Fundamentos de Python</b>
-//             </Typography>
-//             <Typography variant="body1" align = "auto">
-//                 <b>Crehana (2022)</b>
-//             </Typography>
-//             <Divider />
-//             <Typography variant="h5" align = "auto">
-//                 <b>Curso Profesional de php</b>
-//             </Typography>
-//             <Typography variant="body1" align = "auto">
-//                 <b>Codigo Facilito(2022)</b>
-//             </Typography>
-//             <Divider />
-//             <Typography variant="h5" align = "auto">
-//                 <b>Pruebas unitarias con php</b>
-//             </Typography>
-//             <Typography variant="body1" align = "auto">
-//                 <b>Codigo Facilito (2023)</b>
-//             </Typography>
-//             <Divider />
-//             <Typography variant="h5" align = "auto">
-//                 <b>Creacion de Apis con Laravel</b>
-//             </Typography>
-//             <Typography variant="body1" align = "auto">
-//                 <b>Codigo Facilito (2023)</b>
-//             </Typography>
-//             <Divider />
-//             <Typography variant="h5" align = "auto">
-//                 <b>Curso Laravel</b>
-//             </Typography>
-//             <Typography variant="body1" align = "auto">
-//                 <b>Codigo Facilito (2023)</b>
-//             </Typography>
-//         </Box>
-//     </Container>
-// </React.Fragment>
-//   );
-// }
-
-// export default EducationText;

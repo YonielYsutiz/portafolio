@@ -3,10 +3,11 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import './App.css';
-import CenterTex from './components/CenterTex';
+import HomeTex from './components/HomeTex';
 import EducationText from './components/EducationText';
 import Experience from './components/Experience';
 import NavBar from './components/NavBar';
+import ContractTex from './components/ContactTex';
 
 const darkTheme = createTheme({
   palette: {
@@ -45,9 +46,10 @@ function App() {
             item
             xs={12}
           >
-            <CenterTex />
+            <HomeTex />
             <Experience />
             <EducationText />
+            <ContractTex />
           </Grid>
         </Grid>
       </Box>

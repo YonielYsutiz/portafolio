@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
-function CenterTex() {
+function HomeTex() {
   return (
     <Box
       sx={{
@@ -74,4 +74,4 @@ function CenterTex() {
   );
 }
 
-export default CenterTex;
+export default HomeTex;
