@@ -25,3 +25,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.full-height {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  height: 100dvh;
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.neumorphism-content {
+  border-radius: 18px;
+  background: #1e1e1e;
+  box-shadow: -7px -7px 11px #191919, 7px 7px 11px #232323;
+}
