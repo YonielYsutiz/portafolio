@@ -7,13 +7,7 @@ import Typography from '@mui/material/Typography';
 function HomeTex() {
   return (
     <Box
-      sx={{
-        display: 'flex',
-        textAlign: 'left',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100dvh',
-      }}
+      className="full-height"
       id="inicio"
     >
       <div>
@@ -27,21 +21,11 @@ function HomeTex() {
             item
             xs={7}
           >
-            <Typography
-              variant="h5"
-              align="auto"
-            >
-              Hola, Yo soy
-            </Typography>
-            <Typography
-              variant="h2"
-              align="auto"
-            >
-              YONIEL YSTURIZ
-            </Typography>
+            <Typography variant="h5">Hola, Yo soy</Typography>
+            <Typography variant="h2">YONIEL YSTURIZ</Typography>
             <Typography
               variant="body1"
-              align="auto"
+              sx={{ my: 4 }}
             >
               <b>
                 Soy un desarrollador backend con habilidades en PHP y Python,
@@ -53,7 +37,7 @@ function HomeTex() {
               variant="contained"
               href="https://drive.google.com/file/d/1H2MUJonJfSddd2TVVFPscuDWkLMsojDf/view?usp=share_link"
               target="_black"
-              disableElevationd
+              disableElevation
             >
               Descargar CV
             </Button>

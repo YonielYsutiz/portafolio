@@ -1,96 +1,93 @@
-import { Grid, ListItem } from '@mui/material';
+import EmailIcon from '@mui/icons-material/Email';
+import FmdGoodIcon from '@mui/icons-material/FmdGood';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
+import { Grid } from '@mui/material';
+import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
 import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import FmdGoodIcon from '@mui/icons-material/FmdGood';
-import EmailIcon from '@mui/icons-material/Email';
-import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import * as React from 'react';
 
-export default function ContractTex(){
-    return ( 
+export default function ContractTex() {
+  return (
     <>
-    <Box               
-        sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        textAlign: 'left',
-        justifyContent: 'center',
-        height: '100dvh',
-        }}>
-    <Typography
-        variant="h3"
-        align="auto"
-    >
-    
-    Contactame
-    </Typography>
+      <Box
+        className="full-height"
+        sx={{ textAlign: { sm: 'center' }, width: { sm: '100%', lg: '12%' } }}
+      >
+        <Typography variant="h3">Contactame</Typography>
 
-    <Grid
-        id="contactame"
-        rows={2}
-        columns={2}
-        container
-    >
-        <CssBaseline />
         <Grid
-        mt={5}
-        item
+          id="contactame"
+          rows={2}
+          columns={2}
+          container
+          sx={{
+            display: { sm: 'flex' },
+            justifyContent: { sm: 'center' },
+          }}
         >
-        <Container maxWidth="md">
-            <Card sx={{ minWidth: 100, borderRadius: '14px', padding: '10px' }}>
-            <CardContent>
-                <Typography
-                variant="h5"
-                component="div"
-                >
-                Ubicacion y Enlaces
-                </Typography>
-                <Grid>
-                <Typography variant="body2">
-                    <FmdGoodIcon /> Calle 152a #54-37 Casa 91
-                </Typography>
-                <hr />
-                <Typography variant="body2">
-                    <EmailIcon /> ysturizyoniel@gmail.com
-                </Typography>
-                <hr />
-                <Typography variant="body2">
-                    <PhoneIphoneIcon /> +57 3112670105
-                </Typography>
-                </Grid>
-            </CardContent>
-            <CardActions>
-                <GitHubIcon />
+          <CssBaseline />
+          <Grid
+            mt={5}
+            item
+            className="neumorphism-content"
+          >
+            <Card sx={{ borderRadius: '18px', padding: '10px' }}>
+              <CardContent>
+                <h3>Ubicacion y Enlaces</h3>
+                <Box>
+                  <div className="contact-list">
+                    <span>
+                      <FmdGoodIcon />
+                    </span>
+                    Calle 152a #54-37 Casa 91
+                  </div>
+
+                  <hr />
+                  <div className="contact-list">
+                    <span>
+                      <EmailIcon />
+                    </span>
+                    ysturizyoniel@gmail.com
+                  </div>
+
+                  <hr />
+
+                  <div className="contact-list">
+                    <span>
+                      <PhoneIphoneIcon />
+                    </span>
+                    +57 3112670105
+                  </div>
+                </Box>
+              </CardContent>
+              <CardActions>
                 <Button
-                size="small"
-                href="https://github.com/YonielYsutiz"
-                target="_black"
+                  size="small"
+                  href="https://github.com/YonielYsutiz"
+                  target="_black"
                 >
-                Github
+                  <GitHubIcon />
                 </Button>
 
-                <LinkedInIcon />
                 <Button
-                size="small"
-                href="https://www.linkedin.com/in/yoniel-alberto-ysturiz-diaz-a79740246/"
-                target="_black"
+                  size="small"
+                  href="https://www.linkedin.com/in/yoniel-alberto-ysturiz-diaz-a79740246/"
+                  target="_black"
                 >
-                Github
+                  <LinkedInIcon />
                 </Button>
-            </CardActions>
+              </CardActions>
             </Card>
-        </Container>
+          </Grid>
         </Grid>
-    </Grid>
-    </Box>
+      </Box>
     </>
-);
+  );
 }

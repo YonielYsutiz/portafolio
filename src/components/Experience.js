@@ -20,13 +20,9 @@ function Experience() {
         justifyContent: 'center',
         height: '100dvh',
       }}
+      className="full-height"
     >
-      <Typography
-        variant="h3"
-        align="auto"
-      >
-        Mi Experiencia
-      </Typography>
+      <Typography variant="h3">Mi Experiencia</Typography>
       <List sx={{ width: '100%', maxWidth: 1000, bgcolor: 'background.paper' }}>
         <ListItem alignItems="flex-start">
           <ListItemAvatar>
