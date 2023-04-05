@@ -15,15 +15,26 @@ function Experience() {
       id="experiencia"
       sx={{
         display: 'flex',
-        flexDirection: 'column',
-        textAlign: 'left',
         justifyContent: 'center',
-        height: '100dvh',
+        flexWrap: 'wrap',
+        alignItems: 'center',
+        textAlign: { xs: 'center', lg: 'left' },
+        height: { xs: '0', lg: 'calc(100dvh - 55px)' },
+        marginTop: { xs: '55px', lg: '0' },
+        padding: { xs: '0 0.8rem', md: '0' },
+        // background: { xs: 'red', sm: 'green', md: 'blue' },
+        // gap: { sm: '0', lg: '8%' },
       }}
-      className="full-height"
     >
-      <Typography variant="h3">Mi Experiencia</Typography>
-      <List sx={{ width: '100%', maxWidth: 1000, bgcolor: 'background.paper' }}>
+      <h2 className="heading">Mi Experiencia</h2>
+      <List
+        sx={{
+          width: { xs: '100%', lg: '70%' },
+          bgcolor: 'background.paper',
+          display: 'flex',
+          flexWrap: 'wrap',
+        }}
+      >
         <ListItem alignItems="flex-start">
           <ListItemAvatar>
             <Avatar

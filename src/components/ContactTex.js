@@ -10,7 +10,6 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CssBaseline from '@mui/material/CssBaseline';
-import Typography from '@mui/material/Typography';
 import * as React from 'react';
 
 export default function ContractTex() {
@@ -20,7 +19,7 @@ export default function ContractTex() {
         className="full-height"
         sx={{ textAlign: { sm: 'center' }, width: { sm: '100%', lg: '12%' } }}
       >
-        <Typography variant="h3">Contactame</Typography>
+        <h2 className="heading">Contactame</h2>
 
         <Grid
           id="contactame"

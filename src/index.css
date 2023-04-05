@@ -21,9 +21,18 @@ h6 {
   font-family: 'Rubik', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.heading {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0;
+  align-self: flex-start;
+  flex: 1 0 100%;
+  /* margin-right: auto; */
+}
+.greeting {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
 }
 
 .full-height {
@@ -31,7 +40,7 @@ code {
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  height: 100dvh;
+  height: calc(100dvh - 68px);
 }
 
 .contact-list {
@@ -44,4 +53,16 @@ code {
   border-radius: 18px;
   background: #1e1e1e;
   box-shadow: -7px -7px 11px #191919, 7px 7px 11px #232323;
+}
+
+.CardContainer {
+  padding: 15px 20px;
+  border-radius: 18px;
+  background: #1e1e1e;
+  box-shadow: -7px -7px 11px #191919, 7px 7px 11px #232323;
+  margin-top: 1rem;
+  width: 350px;
+}
+.CardContainer > div > ul {
+  text-align: left;
 }
