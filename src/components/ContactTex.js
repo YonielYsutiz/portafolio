@@ -3,90 +3,79 @@ import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
-import { Grid } from '@mui/material';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CssBaseline from '@mui/material/CssBaseline';
 import * as React from 'react';
+import { baseContainerStyles } from '../vendor';
 
 export default function ContractTex() {
   return (
-    <>
+    <Box
+      id="contactame"
+      sx={{ ...baseContainerStyles, marginTop: { xs: '15%', md: 0 } }}
+    >
       <Box
-        className="full-height"
-        sx={{ textAlign: { sm: 'center' }, width: { sm: '100%', lg: '12%' } }}
+        width={{ xs: '100%', lg: '70%' }}
+        display="flex"
+        alignItems="center"
+        justifyContent={{ xs: 'center', md: 'start' }}
+        flexWrap="wrap"
+        gap={{ md: 10 }}
       >
         <h2 className="heading">Contactame</h2>
 
-        <Grid
-          id="contactame"
-          rows={2}
-          columns={2}
-          container
-          sx={{
-            display: { sm: 'flex' },
-            justifyContent: { sm: 'center' },
-          }}
-        >
-          <CssBaseline />
-          <Grid
-            mt={5}
-            item
-            className="neumorphism-content"
+        <section className="CardContainer contact-card">
+          <h3>Ubicacion y Enlaces</h3>
+          <section>
+            <Box>
+              <div className="contact-list">
+                <span>
+                  <FmdGoodIcon />
+                </span>
+                Calle 152a #54-37 Casa 91
+              </div>
+
+              <hr />
+              <div className="contact-list">
+                <span>
+                  <EmailIcon />
+                </span>
+                ysturizyoniel@gmail.com
+              </div>
+
+              <hr />
+
+              <div className="contact-list">
+                <span>
+                  <PhoneIphoneIcon />
+                </span>
+                +57 3112670105
+              </div>
+            </Box>
+          </section>
+          <Box
+            display="flex"
+            gap="5%"
+            justifyContent="center"
           >
-            <Card sx={{ borderRadius: '18px', padding: '10px' }}>
-              <CardContent>
-                <h3>Ubicacion y Enlaces</h3>
-                <Box>
-                  <div className="contact-list">
-                    <span>
-                      <FmdGoodIcon />
-                    </span>
-                    Calle 152a #54-37 Casa 91
-                  </div>
+            <Button
+              size="small"
+              href="https://github.com/YonielYsutiz"
+              target="_black"
+            >
+              <GitHubIcon />
+            </Button>
 
-                  <hr />
-                  <div className="contact-list">
-                    <span>
-                      <EmailIcon />
-                    </span>
-                    ysturizyoniel@gmail.com
-                  </div>
-
-                  <hr />
-
-                  <div className="contact-list">
-                    <span>
-                      <PhoneIphoneIcon />
-                    </span>
-                    +57 3112670105
-                  </div>
-                </Box>
-              </CardContent>
-              <CardActions>
-                <Button
-                  size="small"
-                  href="https://github.com/YonielYsutiz"
-                  target="_black"
-                >
-                  <GitHubIcon />
-                </Button>
-
-                <Button
-                  size="small"
-                  href="https://www.linkedin.com/in/yoniel-alberto-ysturiz-diaz-a79740246/"
-                  target="_black"
-                >
-                  <LinkedInIcon />
-                </Button>
-              </CardActions>
-            </Card>
-          </Grid>
-        </Grid>
+            <Button
+              size="small"
+              href="https://www.linkedin.com/in/yoniel-alberto-ysturiz-diaz-a79740246/"
+              target="_black"
+            >
+              <LinkedInIcon />
+            </Button>
+          </Box>
+        </section>
       </Box>
-    </>
+    </Box>
   );
 }

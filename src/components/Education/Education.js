@@ -3,31 +3,25 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
 import { educationPayload } from '../../api';
+import { baseContainerStyles } from '../../vendor';
 import { CourseContentList } from './components';
 
 export default function Education() {
   return (
     <Box
       sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        flexWrap: 'wrap',
-        alignItems: 'center',
-        textAlign: { xs: 'center', lg: 'left' },
-        height: { xs: '0', lg: '100dvh' },
-        marginTop: { xs: '55px', lg: '0' },
-        padding: { xs: '0 0.8rem', md: '0' },
-        // background: { xs: 'red', sm: 'green', md: 'blue' },
+        ...baseContainerStyles,
+        height: { md: '100dvh' },
       }}
       id="educacion"
     >
       <Box
         width={{ xs: '100%', lg: '70%' }}
         display="flex"
-        justifyContent="space-between"
+        justifyContent={{ xs: 'center', md: 'space-between' }}
         flexWrap="wrap"
       >
-        <h2 className="heading">Mis estudios</h2>
+        <h2 className="heading full-width">Mis estudios</h2>
         {educationPayload.map(
           ({ year, title, platform, content, link }, idx) => (
             <section

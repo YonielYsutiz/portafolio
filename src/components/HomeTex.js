@@ -2,21 +2,15 @@ import { Box } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { baseContainerStyles } from '../vendor';
 
 function HomeTex() {
   return (
     <Box
       id="inicio"
       sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        flexWrap: 'wrap',
-        alignItems: 'center',
-        textAlign: { xs: 'center', lg: 'left' },
-        height: { xs: 'calc(100dvh - 55px)' },
-        marginTop: { xs: '55px', lg: '0' },
-        padding: { xs: '0 0.8rem', md: '0' },
-        // background: { xs: 'red', sm: 'green', md: 'blue' },
+        ...baseContainerStyles,
+        marginTop: { xs: '35px', lg: '0' },
         gap: { sm: '0', lg: '8%' },
       }}
     >
