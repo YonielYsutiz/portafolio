@@ -22,8 +22,32 @@ const navLinks = [
 ];
 
 function NavBar() {
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const homeRef = document.getElementById('inicio');
+  const expRef = document.getElementById('experiencia');
+  const eduRef = document.getElementById('educacion');
+  const contactRef = document.getElementById('contactame');
 
+  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [scrollNav, setScrollNav] = React.useState(() => ({
+    inicio: homeRef,
+    experiencia: expRef,
+    educacion: eduRef,
+    contactame: contactRef,
+  }));
+
+  React.useLayoutEffect(() => {
+    setScrollNav(current => ({
+      ...current,
+      inicio: homeRef,
+      experiencia: expRef,
+      educacion: eduRef,
+      contactame: contactRef,
+    }));
+  }, [homeRef, expRef, eduRef, contactRef]);
+
+  const scrollHandler = label => {
+    scrollNav[label.toLowerCase()]?.scrollIntoView({ behavior: 'smooth' });
+  };
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -37,7 +61,7 @@ function NavBar() {
             key={index}
             disablePadding
             component="a"
-            href={`#${label.toLowerCase()}`}
+            onClick={scrollHandler.bind(this, label)}
             sx={{
               color: '#fff',
             }}

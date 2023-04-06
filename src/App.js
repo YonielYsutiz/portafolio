@@ -1,6 +1,6 @@
-// import logo from './logo.svg';
 import Box from '@mui/material/Box';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import React from 'react';
 import './App.css';
 import ContractTex from './components/ContactTex';
 import Education from './components/Education/Education';
