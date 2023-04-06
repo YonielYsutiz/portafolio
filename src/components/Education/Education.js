@@ -1,84 +1,69 @@
-import { Box, Grid } from '@mui/material';
+import { Box } from '@mui/material';
 import Button from '@mui/material/Button';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CssBaseline from '@mui/material/CssBaseline';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
 import { educationPayload } from '../../api';
+import { baseContainerStyles } from '../../vendor';
 import { CourseContentList } from './components';
 
 export default function Education() {
   return (
     <Box
-      className="full-height"
+      sx={{
+        ...baseContainerStyles,
+        height: { md: '100dvh' },
+      }}
       id="educacion"
     >
-      <Typography variant="h3">Mis estudios</Typography>
-
-      <Grid
-        rows={2}
-        columns={2}
-        gap={5}
-        container
-        alignItems="stretch"
+      <Box
+        width={{ xs: '100%', lg: '70%' }}
+        display="flex"
+        justifyContent={{ xs: 'center', md: 'space-between' }}
+        flexWrap="wrap"
       >
-        <CssBaseline />
-
+        <h2 className="heading full-width">Mis estudios</h2>
         {educationPayload.map(
           ({ year, title, platform, content, link }, idx) => (
-            <Grid
-              mt={5}
-              item
+            <section
               key={idx}
-              className="neumorphism-content"
+              className="CardContainer"
             >
-              <Card
-                sx={{
-                  minWidth: 100,
-                  borderRadius: '18px',
-                  padding: '10px',
-                  height: '100%',
-                }}
-              >
-                <CardContent>
-                  <Typography
-                    sx={{ fontSize: 14 }}
-                    color="text.secondary"
-                    gutterBottom
-                  >
-                    {year}
-                  </Typography>
-                  <Typography
-                    variant="h5"
-                    component="div"
-                  >
-                    {title}
-                  </Typography>
-                  <Typography
-                    sx={{ mb: 1.5 }}
-                    color="text.secondary"
-                  >
-                    {platform}
-                  </Typography>
+              <div>
+                <Typography
+                  sx={{ fontSize: 14 }}
+                  color="text.secondary"
+                  gutterBottom
+                >
+                  {year}
+                </Typography>
+                <Typography
+                  variant="h5"
+                  component="div"
+                >
+                  {title}
+                </Typography>
+                <Typography
+                  sx={{ mb: 1.5 }}
+                  color="text.secondary"
+                >
+                  {platform}
+                </Typography>
 
-                  <CourseContentList courseContent={content} />
-                </CardContent>
-                <CardActions>
-                  <Button
-                    size="small"
-                    href={link}
-                    target="_black"
-                  >
-                    Link del curso
-                  </Button>
-                </CardActions>
-              </Card>
-            </Grid>
+                <CourseContentList courseContent={content} />
+              </div>
+              <div>
+                <Button
+                  size="small"
+                  href={link}
+                  target="_black"
+                >
+                  Link del curso
+                </Button>
+              </div>
+            </section>
           )
         )}
-      </Grid>
+      </Box>
     </Box>
   );
 }
