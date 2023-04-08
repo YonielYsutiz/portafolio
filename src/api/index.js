@@ -9,7 +9,7 @@ export const educationPayload = [
       'Condiciones y ciclos',
       'Arreglos',
       'Funciones',
-      'Programacion orientada a objetos',
+      'programación orientada a objetos',
       'Base de datos',
       'MVC',
     ],
@@ -21,7 +21,7 @@ export const educationPayload = [
     platform: 'Codigo Facilito',
     content: [
       'Asserts',
-      'Creacion de helpers',
+      'creación de helpers',
       'Setup y teardown',
       'Base de datos',
       'Pruebas con excepciones',
@@ -34,7 +34,7 @@ export const educationPayload = [
   },
   {
     year: 2022,
-    title: 'Creacion de apis en laravel',
+    title: 'Creación de apis en laravel',
     platform: 'Platzi',
     content: [
       'Modelo y controlador',

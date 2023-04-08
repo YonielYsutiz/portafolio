@@ -6,7 +6,7 @@ import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import * as React from 'react';
-import { baseContainerStyles } from '../vendor';
+import { baseContainerStyles } from '../../vendor';
 
 export default function ContractTex() {
   return (
@@ -22,10 +22,10 @@ export default function ContractTex() {
         flexWrap="wrap"
         gap={{ md: 10 }}
       >
-        <h2 className="heading">Contactame</h2>
+        <h2 className="heading">Contáctame</h2>
 
         <section className="CardContainer contact-card">
-          <h3>Ubicacion y Enlaces</h3>
+          <h3>Ubicación y Enlaces</h3>
           <section>
             <Box>
               <div className="contact-list">

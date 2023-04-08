@@ -8,9 +8,9 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
-import { baseContainerStyles } from '../vendor';
+import { baseContainerStyles } from '../../vendor';
 
-function Experience() {
+export default function Experience() {
   return (
     <Box
       id="experiencia"
@@ -52,7 +52,7 @@ function Experience() {
                     Developer-Backend
                   </Typography>
                   {
-                    ' - Colabore para la generacion de cuentas de cobro, creacion de metodos y funciones, mantenimientos y construccion de servicios REST.'
+                    ' - Colaboré para la generación de cuentas de cobro, creación de métodos y funciones, mantenimientos y construcción de servicios REST'
                   }
                   <div>
                     <Link
@@ -91,7 +91,7 @@ function Experience() {
                     Developer-Backend
                   </Typography>
                   {
-                    ' — Colabore en la creacion y modificacion de migraciones para bases de datos, modelos y controladores, Generacion de servicios REST y Modificaciones esteticas de la pagina'
+                    ' — Colaboré en la creación y modificación de migraciones para bases de datos, modelos y controladores, generación de servicios REST y modificaciones estéticas de la página.'
                   }
                   <div>
                     <Link
@@ -111,4 +111,3 @@ function Experience() {
     </Box>
   );
 }
-export default Experience;

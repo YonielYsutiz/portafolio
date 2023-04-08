@@ -2,11 +2,11 @@ import Box from '@mui/material/Box';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import React from 'react';
 import './App.css';
-import ContractTex from './components/ContactTex';
+import Contact from './components/Contact/Contact';
 import Education from './components/Education/Education';
-import Experience from './components/Experience';
-import HomeTex from './components/HomeTex';
-import NavBar from './components/NavBar';
+import Experience from './components/Experience/Experience';
+import Home from './components/Home/Home';
+import NavBar from './components/NavBar/NavBar';
 
 const darkTheme = createTheme({
   palette: {
@@ -25,10 +25,10 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <Box>
         <NavBar />
-        <HomeTex />
+        <Home />
         <Experience />
         <Education />
-        <ContractTex />
+        <Contact />
       </Box>
     </ThemeProvider>
   );

@@ -2,9 +2,9 @@ import { Box } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { baseContainerStyles } from '../vendor';
+import { baseContainerStyles } from '../../vendor';
 
-function HomeTex() {
+export default function Home() {
   return (
     <Box
       id="inicio"
@@ -22,9 +22,9 @@ function HomeTex() {
           sx={{ my: { xs: 2, md: 4 }, maxWidth: '60ch' }}
         >
           <b>
-            Soy un desarrollador backend con habilidades en PHP y Python,
-            buscando oportunidades para continuar aprendiendo y creciendo en un
-            entorno de trabajo dinámico y colaborativo.
+          Soy un desarrollador backend con habilidades en PHP y Python,
+          buscando oportunidades para continuar aprendiendo y creciendo en un
+          entorno de trabajo dinámico y colaborativo.
           </b>
         </Typography>
         <Button
@@ -46,5 +46,3 @@ function HomeTex() {
     </Box>
   );
 }
-
-export default HomeTex;
