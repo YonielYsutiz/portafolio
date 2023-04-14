@@ -19,7 +19,7 @@ export default function Home() {
         <h2 className="heading">YONIEL YSTURIZ</h2>
         <Typography
           variant="body1"
-          sx={{ my: { xs: 2, md: 4 }, maxWidth: '60ch' }}
+          sx={{ my: { xs: 2, md: 4 }, maxWidth: '30ch' }}
         >
           <b>
           Soy un desarrollador backend con habilidades en PHP y Python,

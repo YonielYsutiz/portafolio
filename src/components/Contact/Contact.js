@@ -12,10 +12,10 @@ export default function ContractTex() {
   return (
     <Box
       id="contactame"
-      sx={{ ...baseContainerStyles, marginTop: { xs: '15%', md: 0 } }}
+      sx={{ ...baseContainerStyles, marginTop: { xs: '15%', md: '15%' } }}
     >
       <Box
-        width={{ xs: '100%', lg: '70%' }}
+        width={{ xs: '100%', lg: '60%' }}
         display="flex"
         alignItems="center"
         justifyContent={{ xs: 'center', md: 'start' }}

@@ -3,7 +3,7 @@ const baseContainerStyles = {
   justifyContent: 'center',
   flexWrap: 'wrap',
   alignItems: { xs: 'start', md: 'center' },
-  textAlign: { xs: 'center', lg: 'left' },
+  textAlign: { xs: 'center', lg: 'center' },
   height: '100vh',
   marginTop: { lg: '0' },
   padding: { xs: '0 0.8rem', md: '0' },

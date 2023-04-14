@@ -16,7 +16,7 @@ export default function Education() {
       id="educacion"
     >
       <Box
-        width={{ xs: '100%', lg: '70%' }}
+        width={{ xs: '100%', lg: '65%' }}
         display="flex"
         justifyContent={{ xs: 'center', md: 'space-between' }}
         flexWrap="wrap"

@@ -13,7 +13,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import * as React from 'react';
 
-const drawerWidth = 240;
+const drawerWidth = 200;
 const navLinks = [
   { label: 'Inicio', Icon: HomeIcon },
   { label: 'Experiencia', Icon: HomeRepairServiceIcon },
@@ -115,7 +115,7 @@ function NavBar() {
             keepMounted: true,
           }}
           sx={{
-            display: { xs: 'block', sm: 'block', md: 'block', lg: 'none' },
+            display: { xs: 'block', sm: 'block', md: 'block', lg: 'none'},
             '& .MuiDrawer-paper': {
               boxSizing: 'border-box',
               width: drawerWidth,
@@ -127,7 +127,7 @@ function NavBar() {
         <Drawer
           variant="permanent"
           sx={{
-            display: { xs: 'none', sm: 'none', md: 'none', lg: 'block' },
+            display: { xs: 'none', sm: 'none', md: 'none', lg: 'block'},
             '& .MuiDrawer-paper': {
               boxSizing: 'border-box',
               width: drawerWidth,

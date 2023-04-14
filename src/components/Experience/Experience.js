@@ -17,7 +17,7 @@ export default function Experience() {
       sx={{ ...baseContainerStyles, marginTop: { xs: '15%', md: 0 } }}
     >
       <Box
-        width={{ xs: '100%', lg: '70%' }}
+        width={{ xs: '100%', lg: '60%' }}
         display="flex"
         justifyContent={{ xs: 'center', md: 'space-between' }}
         alignItems="center"
