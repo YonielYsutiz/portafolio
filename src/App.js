@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Contact from './components/Contact/Contact';
 import Education from './components/Education/Education';
@@ -21,6 +21,9 @@ const darkTheme = createTheme({
 });
 
 function App() {
+  useEffect(()=>{
+    document.title = "Portafolio"
+  }, [])
   return (
     <ThemeProvider theme={darkTheme}>
       <Box>
