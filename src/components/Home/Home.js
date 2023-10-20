@@ -40,7 +40,7 @@ export default function Home() {
         <Avatar
           alt="Yoniel Ysturiz"
           src="imagen.jpg"
-          sx={{ width: 250, height: 250 }}
+          sx={{ width: 200, height: 200 }}
         />
       </Box>
     </Box>
