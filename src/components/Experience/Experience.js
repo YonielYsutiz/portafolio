@@ -52,7 +52,7 @@ export default function Experience() {
                     Developer-Backend
                   </Typography>
                   {
-                    ' - Colaboré para la generación de cuentas de cobro, creación de métodos y funciones, mantenimientos y construcción de servicios REST'
+                    ' - Colaboré para la generación de cuentas de cobro, creación de métodos y funciones, creación y modificación de migraciones para bases de datos, mantenimientos y construcción de servicios REST y modificaciones estéticas de la página.'
                   }
                   <div>
                     <Link
