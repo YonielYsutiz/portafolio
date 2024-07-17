@@ -49,7 +49,7 @@ export default function Experience() {
                     variant="body2"
                     color="text.primary"
                   >
-                    Developer-Backend
+                    Desarrollador Web
                   </Typography>
                   {
                     ' - Colaboré para la generación de cuentas de cobro, creación de métodos y funciones, creación y modificación de migraciones para bases de datos, mantenimientos y construcción de servicios REST y modificaciones estéticas de la página.'
@@ -88,7 +88,7 @@ export default function Experience() {
                     variant="body2"
                     color="text.primary"
                   >
-                    Developer-Backend
+                    Desarrollador Web
                   </Typography>
                   {
                     ' — Colaboré en la creación y modificación de migraciones para bases de datos, modelos y controladores, generación de servicios REST y modificaciones estéticas de la página.'
@@ -96,6 +96,45 @@ export default function Experience() {
                   <div>
                     <Link
                       href="https://www.talent-fest.com/"
+                      target="_black"
+                      rel="noopener"
+                    >
+                      Link del proyecto
+                    </Link>
+                  </div>
+                </React.Fragment>
+              }
+            />
+          </ListItem>
+          <Divider
+            variant="inset"
+            component="li"
+          />
+          <ListItem alignItems="flex-start">
+            <ListItemAvatar>
+              <Avatar
+                alt="Travis Howard"
+                src="unico_photo.jpg"
+              />
+            </ListItemAvatar>
+            <ListItemText
+              primary="Desarrollador fullStack en unico"
+              secondary={
+                <React.Fragment>
+                  <Typography
+                    sx={{ display: 'inline' }}
+                    component="span"
+                    variant="body2"
+                    color="text.primary"
+                  >
+                    Desarrollador Web
+                  </Typography>
+                  {
+                    ' — Colaboré en la creación y modificación de tablas para bases de datos, controladores, generación de servicios API-REST , modificaciones estéticas y creaciones de nuevos modulos de la página Participacion en el desarrollo de un mini CMS interno para la gestion de contenido dentro de la pagina principal (carousel, secciones, footer, colores, etc).'
+                  }
+                  <div>
+                    <Link
+                      href="https://www.unico.com.co/"
                       target="_black"
                       rel="noopener"
                     >

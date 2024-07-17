@@ -19,17 +19,18 @@ export default function Home() {
         <h2 className="heading">YONIEL YSTURIZ</h2>
         <Typography
           variant="body1"
-          sx={{ my: { xs: 2, md: 4 }, maxWidth: '30ch' }}
+          sx={{ my: { xs: 2, md: 4 }, maxWidth: '40ch' }}
         >
           <b>
-          Soy un desarrollador backend con habilidades en PHP y Python,
+          Soy un desarrollador web con habilidades en PHP, Laravel, Python, Vuejs, React,
+          MySql, JavaScript y git
           buscando oportunidades para continuar aprendiendo y creciendo en un
           entorno de trabajo dinámico y colaborativo.
           </b>
         </Typography>
         <Button
           variant="contained"
-          href="https://drive.google.com/file/d/1mqAeB-13MFwQ_TDljlyJ4DeWe3oPbfuf/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1DK2booKMDsOp6AnIr3OKaHvJjQ4teibV/view?usp=drive_link"
           target="_black"
           disableElevation
         >
@@ -39,7 +40,7 @@ export default function Home() {
       <Box>
         <Avatar
           alt="Yoniel Ysturiz"
-          src="imagen.jpg"
+          src="imageHome.jpeg"
           sx={{ width: 200, height: 200 }}
         />
       </Box>
