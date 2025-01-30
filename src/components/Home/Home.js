@@ -30,7 +30,7 @@ export default function Home() {
         </Typography>
         <Button
           variant="contained"
-          href="https://drive.google.com/file/d/1sIvf1NkE8krO5Al1oRsyVrz5ob8pFqer/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1sIvf1NkE8krO5Al1oRsyVrz5ob8pFqer/view?usp=sharing"
           target="_black"
           disableElevation
         >
